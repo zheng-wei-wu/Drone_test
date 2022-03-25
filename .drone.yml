@@ -12,3 +12,5 @@ steps:
 
   - name: rsync
     image: drillster/drone-rsync
+    commands:
+      - ls
