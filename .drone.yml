@@ -12,11 +12,3 @@ steps:
 
   - name: rsync
     image: drillster/drone-rsync
-    settings:
-      host:
-        from_secret: HOST
-      key:
-        from_secret: USER_KEY
-      source: ./
-      target:
-        from_secret: TARGET_PATH
