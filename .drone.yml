@@ -12,5 +12,12 @@ steps:
 
   - name: rsync
     image: drillster/drone-rsync
+    settings:
+      host:
+        from_secret: HOST
+      user:
+        from_secret: SSH_USER_NAME
+      key:
+        from_secret: USER_KEY
     commands:
-      - ls
+      - rsync -avh ./ wzw@172.20.10.2:/Users/wzw/Desktop/B/
