@@ -7,15 +7,4 @@ steps:
     image: alpine
     commands:
       - ls
-
-  - name: rsync
-    image: drillster/drone-rsync
-    settings:
-      host:
-        from_secret: HOST
-      user:
-        from_secret: SSH_USER_NAME
-      key:
-        from_secret: SSH_USER_NAME
-      target:
-        from_secret: TARGET_PATH
+      - pwd
