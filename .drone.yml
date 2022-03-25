@@ -3,19 +3,17 @@ type: docker
 name: default
 
 steps:
-  - name: greeting
+  - name: listing
     image: alpine
     commands:
-      - echo hello
-      - echo world
       - ls
 
   - name: rsync
     image: drillster/drone-rsync
     settings:
       host:
-        from_secret: HOST
+        - 172.20.10.2
       user:
-        from_secret: SSH_USER_NAME
+        - wzw
       key:
-        from_secret: USER_KEY
+        - nozomi
