@@ -12,8 +12,10 @@ steps:
     image: drillster/drone-rsync
     settings:
       host:
-        - 172.20.10.2
+        from_secret: HOST
       user:
-        - wzw
+        from_secret: SSH_USER_NAME
       key:
-        - nozomi
+        from_secret: SSH_USER_NAME
+      target:
+        from_secret: TARGET_PATH
