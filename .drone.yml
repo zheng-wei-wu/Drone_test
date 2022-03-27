@@ -9,10 +9,20 @@ steps:
       - ls
       - pwd
 
-  - name: clone_2
-    image: alpine/git
-    commands:
-      - cd /drone/src
-      - pwd
-      - git clone https://github.com/zheng-wei-wu/Drone_test.git
-      - ls
+  - name: rebuild-cache
+    image: drillster/drone-volume-cache
+    volumes:
+    - name: cache
+      path: /cache
+    settings:
+      rebuild: true
+      mount:
+        - ./node_modules
+
+volumes:
+  - name: cache
+    host:
+      path: /Users/wzw/Desktop/A
+  - name: docker
+    host:
+      path: /drone/src
