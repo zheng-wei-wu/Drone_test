@@ -23,6 +23,3 @@ volumes:
   - name: cache
     host:
       path: /Users/wzw/Desktop/A
-  - name: docker
-    host:
-      path: /drone/src
