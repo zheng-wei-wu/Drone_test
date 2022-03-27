@@ -8,4 +8,5 @@ steps:
     commands:
       - ls
       - pwd
-      - cp -R ./ /var/lib
+      - cd /var/lib
+      - pwd
