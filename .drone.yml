@@ -11,9 +11,15 @@ steps:
 
   - name: rebuild-cache
     image: drillster/drone-volume-cache
+    volumes:
+    - name: cache
+      path: /cache
     settings:
       rebuild: true
       mount:
         - /drone/src
-    volumes:
-      - /Users/wzw/Desktop/A:/cache
+
+volumes:
+  - name: cache
+    host:
+      path: /var_5
