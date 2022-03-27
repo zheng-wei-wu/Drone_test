@@ -8,9 +8,7 @@ steps:
     commands:
       - ls
       - pwd
-      - cd /data
-      - pwd
-
+      
   - name: clone_2
     image: alpine/git
     commands:
