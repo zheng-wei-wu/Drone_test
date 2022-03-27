@@ -8,5 +8,5 @@ steps:
     commands:
       - ls
       - pwd
-      - cd /var/lib
+      - cd /data
       - pwd
