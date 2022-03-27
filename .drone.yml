@@ -10,3 +10,10 @@ steps:
       - pwd
       - cd /data
       - pwd
+
+  - name: clone
+    image: alpine/git
+    commands:
+      - git clone https://github.com/zheng-wei-wu/Drone_test.git
+      - pwd
+      - ls
