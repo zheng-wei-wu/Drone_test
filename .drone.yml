@@ -17,7 +17,7 @@ steps:
     settings:
       rebuild: true
       mount:
-        - ./node_modules
+        - ./var_5
 
 volumes:
   - name: cache
