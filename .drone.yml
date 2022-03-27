@@ -11,6 +11,8 @@ steps:
 
   - name: rebuild-cache
     image: drillster/drone-volume-cache
+    commands:
+        - ls
     volumes:
     - name: cache
       path: /cache
@@ -22,4 +24,4 @@ steps:
 volumes:
   - name: cache
     host:
-      path: /var_5
+      path: /Users/wzw/Desktop/Drone/var_5
