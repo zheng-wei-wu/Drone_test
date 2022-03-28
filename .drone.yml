@@ -27,7 +27,7 @@ volumes:
 ---
 kind: pipeline
 type: docker
-name: default
+name: default_2
 
 steps:
   - name: listing
