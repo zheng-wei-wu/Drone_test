@@ -23,3 +23,15 @@ volumes:
   - name: cache
     host:
       path: /Users/wzw/Desktop/Drone/var_5
+
+---
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: listing
+    image: alpine
+    commands:
+      - ls
+      - pwd
