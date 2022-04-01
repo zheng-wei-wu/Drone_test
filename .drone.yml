@@ -22,7 +22,7 @@ steps:
 volumes:
   - name: cache
     host:
-      path: /Users/wzw/Desktop/Drone/var_5
+      path: /Users/wzw/Desktop/Drone/server
 
 ---
 kind: pipeline
